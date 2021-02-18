@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<title>BNB Swap &#8211; Stiff Money</title>
+	<script>
+	( function() {
+		var query = document.location.search;
+
+		if ( query && query.indexOf( 'preview=true' ) !== -1 ) {
+			window.name = 'wp-preview-303';
+		}
+
+		if ( window.addEventListener ) {
+			window.addEventListener( 'unload', function() { window.name = ''; }, false );
+		}
+	}());
+	</script>
+	<!-- Optimized by SG Optimizer plugin version - 5.7.11 --><link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Stiff Money &raquo; Feed" href="https://stiffmoney.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Stiff Money &raquo; Comments Feed" href="https://stiffmoney.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/stiffmoney.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='dashicons-css'  href='https://stiffmoney.com/wp-includes/css/dashicons.min.css?ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://stiffmoney.com/wp-includes/css/admin-bar.min.css?ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-common-css'  href='https://stiffmoney.com/wp-content/plugins/elementor/assets/css/common.min.css?ver=3.0.14' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://stiffmoney.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='hello-elementor-css'  href='https://stiffmoney.com/wp-content/themes/hello-elementor/style.min.css?ver=2.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css'  href='https://stiffmoney.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-ekiticons-css'  href='https://stiffmoney.com/wp-content/plugins/elementskit-lite/modules/controls/assets/css/ekiticons.css?ver=5.9.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.0.14' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='https://stiffmoney.com/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.0.14' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://stiffmoney.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.0.14' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-9-css'  href='https://stiffmoney.com/wp-content/uploads/elementor/css/post-9.css?ver=1613118658' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css'  href='https://stiffmoney.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='elementskit-css-widgetarea-control-editor-css'  href='https://stiffmoney.com/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css?ver=2.0.13' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-303-css'  href='https://stiffmoney.com/wp-content/uploads/elementor/css/post-303.css?ver=1613674263' type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-widget-styles-css'  href='https://stiffmoney.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.0.13' type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-responsive-css'  href='https://stiffmoney.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.0.13' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNoto+Sans+KR%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://stiffmoney.com/wp-json/" /><link rel="alternate" type="application/json" href="https://stiffmoney.com/wp-json/wp/v2/pages/303" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://stiffmoney.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://stiffmoney.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.1" />
+<link rel="canonical" href="https://stiffmoney.com/bnb-swap/" />
+<link rel='shortlink' href='https://stiffmoney.com/?p=303' />
+<link rel="alternate" type="application/json+oembed" href="https://stiffmoney.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstiffmoney.com%2Fbnb-swap%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://stiffmoney.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstiffmoney.com%2Fbnb-swap%2F&#038;format=xml" />
+		<style>
+			.gforms-menu-icon {
+				float: left;
+				width: 26px !important;
+				height: 30px !important;
+				background-repeat: no-repeat;
+				background-position: 0 6px;
+				background-size: 20px;
+			}
+
+			@media screen and ( max-width: 782px ) {
+				#wpadminbar #wp-admin-bar-gform-forms .ab-item {
+					line-height: 53px;
+					height: 46px !important;
+					width: 52px !important;
+					display: block;
+					background-size: 36px 36px;
+					background-position: 7px 6px;
+				}
+
+				#wpadminbar li#wp-admin-bar-gform-forms {
+					display: block;
+				}
+
+			}
+		</style>
+		<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	<link rel="icon" href="https://stiffmoney.com/wp-content/uploads/2020/11/StiffMoneySMlogo.png" sizes="32x32" />
+<link rel="icon" href="https://stiffmoney.com/wp-content/uploads/2020/11/StiffMoneySMlogo.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://stiffmoney.com/wp-content/uploads/2020/11/StiffMoneySMlogo.png" />
+<meta name="msapplication-TileImage" content="https://stiffmoney.com/wp-content/uploads/2020/11/StiffMoneySMlogo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-303 logged-in admin-bar no-customize-support wp-custom-logo elementor-default elementor-template-canvas elementor-kit-9 elementor-page elementor-page-303">
+		<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://stiffmoney.com/wp-admin/about.php'><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' href='https://stiffmoney.com/wp-admin/about.php'>About WordPress</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://codex.wordpress.org/'>Documentation</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://stiffmoney.com/wp-admin/'>Stiff Money</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-dashboard'><a class='ab-item' href='https://stiffmoney.com/wp-admin/'>Dashboard</a></li></ul><ul id='wp-admin-bar-appearance' class="ab-submenu"><li id='wp-admin-bar-themes'><a class='ab-item' href='https://stiffmoney.com/wp-admin/themes.php'>Themes</a></li><li id='wp-admin-bar-menus'><a class='ab-item' href='https://stiffmoney.com/wp-admin/nav-menus.php'>Menus</a></li></ul></div></li><li id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item' href='https://stiffmoney.com/wp-admin/customize.php?url=https%3A%2F%2Fstiffmoney.com%2Fbnb-swap%2F%3Fpreview_id%3D303%26preview_nonce%3D8adad37c91%26preview%3Dtrue'>Customize</a></li><li id='wp-admin-bar-updates'><a class='ab-item' href='https://stiffmoney.com/wp-admin/update-core.php' title='4 Plugin Updates, 4 Theme Updates'><span class="ab-icon"></span><span class="ab-label">8</span><span class="screen-reader-text">4 Plugin Updates, 4 Theme Updates</span></a></li><li id='wp-admin-bar-comments'><a class='ab-item' href='https://stiffmoney.com/wp-admin/edit-comments.php'><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li><li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://stiffmoney.com/wp-admin/post-new.php'><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-new-content-default' class="ab-submenu"><li id='wp-admin-bar-new-post'><a class='ab-item' href='https://stiffmoney.com/wp-admin/post-new.php'>Post</a></li><li id='wp-admin-bar-new-media'><a class='ab-item' href='https://stiffmoney.com/wp-admin/media-new.php'>Media</a></li><li id='wp-admin-bar-new-page'><a class='ab-item' href='https://stiffmoney.com/wp-admin/post-new.php?post_type=page'>Page</a></li><li id='wp-admin-bar-new-elementor_library'><a class='ab-item' href='https://stiffmoney.com/wp-admin/post-new.php?post_type=elementor_library'>Template</a></li><li id='wp-admin-bar-new-user'><a class='ab-item' href='https://stiffmoney.com/wp-admin/user-new.php'>User</a></li><li id='wp-admin-bar-gravityforms-new-form'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_new_form'>Form</a></li></ul></div></li><li id='wp-admin-bar-edit'><a class='ab-item' href='https://stiffmoney.com/wp-admin/post.php?post=303&#038;action=edit'>Edit Page</a></li><li id='wp-admin-bar-SG_CachePress_Supercacher_Purge' class="sg-cachepress-admin-bar-purge"><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin-ajax.php?action=admin_bar_purge_cache&#038;_wpnonce=8ebb483c6f'>Purge SG Cache</a></li><li id='wp-admin-bar-gform-forms' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms'><div class="ab-item gforms-menu-icon svg" style="background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMTUgNzcgNTgxIDY0MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAtMTUgNzcgNTgxIDY0MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgaWQ9IkxheWVyXzIiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00ODkuNSwyMjdMNDg5LjUsMjI3TDMxNS45LDEyNi44Yy0yMi4xLTEyLjgtNTguNC0xMi44LTgwLjUsMEw2MS44LDIyN2MtMjIuMSwxMi44LTQwLjMsNDQuMi00MC4zLDY5Ljd2MjAwLjVjMCwyNS42LDE4LjEsNTYuOSw0MC4zLDY5LjdsMTczLjYsMTAwLjJjMjIuMSwxMi44LDU4LjQsMTIuOCw4MC41LDBMNDg5LjUsNTY3YzIyLjItMTIuOCw0MC4zLTQ0LjIsNDAuMy02OS43VjI5Ni44QzUyOS44LDI3MS4yLDUxMS43LDIzOS44LDQ4OS41LDIyN3ogTTQwMSwzMDAuNHY1OS4zSDI0MXYtNTkuM0g0MDF6IE0xNjMuMyw0OTAuOWMtMTYuNCwwLTI5LjYtMTMuMy0yOS42LTI5LjZjMC0xNi40LDEzLjMtMjkuNiwyOS42LTI5LjZzMjkuNiwxMy4zLDI5LjYsMjkuNkMxOTIuOSw0NzcuNiwxNzkuNiw0OTAuOSwxNjMuMyw0OTAuOXogTTE2My4zLDM1OS43Yy0xNi40LDAtMjkuNi0xMy4zLTI5LjYtMjkuNnMxMy4zLTI5LjYsMjkuNi0yOS42czI5LjYsMTMuMywyOS42LDI5LjZTMTc5LjYsMzU5LjcsMTYzLjMsMzU5Ljd6IE0yNDEsNDkwLjl2LTU5LjNoMTYwdjU5LjNIMjQxeiIvPjwvZz48L3N2Zz4=');"></div><span class="ab-label">Forms</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-gform-form-recent-forms' class="ab-submenu"><li id='wp-admin-bar-gform-form-2' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms&#038;id=2'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Make a Loan</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-gform-form-2-default' class="ab-submenu"><li id='wp-admin-bar-gform-form-2-edit'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms&#038;id=2'>Edit</a></li><li id='wp-admin-bar-gform-form-2-entries'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_entries&#038;id=2'>Entries</a></li><li id='wp-admin-bar-gform-form-2-settings'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms&#038;view=settings&#038;subview=settings&#038;id=2'>Settings</a></li><li id='wp-admin-bar-gform-form-2-preview'><a class='ab-item' href='https://stiffmoney.com/?gf_page=preview&#038;id=2'>Preview</a></li></ul></div></li><li id='wp-admin-bar-gform-form-1' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms&#038;id=1'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Homebuyer Application</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-gform-form-1-default' class="ab-submenu"><li id='wp-admin-bar-gform-form-1-edit'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms&#038;id=1'>Edit</a></li><li id='wp-admin-bar-gform-form-1-entries'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_entries&#038;id=1'>Entries</a></li><li id='wp-admin-bar-gform-form-1-settings'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms&#038;view=settings&#038;subview=settings&#038;id=1'>Settings</a></li><li id='wp-admin-bar-gform-form-1-preview'><a class='ab-item' href='https://stiffmoney.com/?gf_page=preview&#038;id=1'>Preview</a></li></ul></div></li></ul><ul id='wp-admin-bar-gform-forms-default' class="ab-submenu"><li id='wp-admin-bar-gform-forms-view-all'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_edit_forms'>All Forms</a></li><li id='wp-admin-bar-gform-forms-new-form'><a class='ab-item' href='https://stiffmoney.com/wp-admin/admin.php?page=gf_new_form'>New Form</a></li></ul></div></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://stiffmoney.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div></li><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://stiffmoney.com/wp-admin/profile.php'>Howdy, <span class="display-name">Boone Bergsma</span><img alt='' src='https://secure.gravatar.com/avatar/23fe6c5ace6c12f3a7b2c25b53d81178?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/23fe6c5ace6c12f3a7b2c25b53d81178?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy'/></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='https://stiffmoney.com/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/23fe6c5ace6c12f3a7b2c25b53d81178?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/23fe6c5ace6c12f3a7b2c25b53d81178?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span class='display-name'>Boone Bergsma</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://stiffmoney.com/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://stiffmoney.com/wp-login.php?action=logout&#038;_wpnonce=495c2b17cc'>Log Out</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://stiffmoney.com/wp-login.php?action=logout&#038;_wpnonce=495c2b17cc">Log Out</a>
+					</div>
+
+				<div data-elementor-type="wp-page" data-elementor-id="303" class="elementor elementor-303" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<header class="elementor-section elementor-top-section elementor-element elementor-element-70af3474 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="70af3474" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5002ac0f" data-id="5002ac0f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a8b7991 elementor-widget elementor-widget-image" data-id="a8b7991" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+											<a href="https://stiffmoney.com/">
+							<img width="111" height="100" src="https://stiffmoney.com/wp-content/uploads/2020/11/StiffMoneySMlogo.png" class="attachment-large size-large" alt="" loading="lazy" />								</a>
+											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-242c69ad" data-id="242c69ad" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7af5e5e0 elementor-widget elementor-widget-text-editor" data-id="7af5e5e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://stiffmoney.com/">Stiff.Money</a> </span>  »   Staking App</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</header>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-390ed9d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="390ed9d6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5245affa" data-id="5245affa" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4ed6d5c4 elementor-widget elementor-widget-heading" data-id="4ed6d5c4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Swap $BNB for $DEED tokens</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-46312dc elementor-widget elementor-widget-text-editor" data-id="46312dc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Exchange your BNBs for <span style="color: #ff00ff;"><a style="color: #ff00ff;" href="https://testnet.bscscan.com/token/0x751c078c7f5def817a187d3711e1a5cfc95b6432">DEEDs (BEP20 Tokens)</a></span><br />get 1 $DEED for every $1 value of $BNB swapped<br />all transaction fees are covered by Stiff Money<br />.<br /><small>To add support for BEP20 Tokens in Metamask please follow these <span style="color: #ff00ff;"><a style="color: #ff00ff;" href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain">instructions</a></span></small></p></div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-36f9ed58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="36f9ed58" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-79a6b3a1" data-id="79a6b3a1" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-20f03a39" data-id="20f03a39" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7262529b elementor-widget elementor-widget-html" data-id="7262529b" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<button id="stakeDEED" onclick="stake Token()" type="submit">CONNECT METAMASK</button>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-18c526b0" data-id="18c526b0" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-5e221420 elementor-widget elementor-widget-spacer" data-id="5e221420" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-64f6d860 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="64f6d860" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-605aa113" data-id="605aa113" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7d510119 elementor-widget elementor-widget-heading" data-id="7d510119" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Your Wallet: </h4>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1f94bdcb" data-id="1f94bdcb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5d87b0b8 elementor-widget elementor-widget-heading" data-id="5d87b0b8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">(should populate with address of connected wallet)</h4>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3b8c6bc6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3b8c6bc6" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-77048027" data-id="77048027" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1149e686" data-id="1149e686" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5e7a369a elementor-widget elementor-widget-html" data-id="5e7a369a" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<input id="numBNB" type="text" placeholder="Number of BNB you want to swap" name="numberDEED" required="">		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-27935594" data-id="27935594" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-269122ec elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="269122ec" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-20fd374d" data-id="20fd374d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5bc840d7 elementor-widget elementor-widget-heading" data-id="5bc840d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Number of $DEED you will get: </h4>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-445c9b6e" data-id="445c9b6e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-58592a7c elementor-widget elementor-widget-heading" data-id="58592a7c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">(1 to 1 ratio)</h4>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-673fe896 elementor-widget elementor-widget-spacer" data-id="673fe896" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-14fb03a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="14fb03a" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7a0d1c10" data-id="7a0d1c10" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6f2cb9bf" data-id="6f2cb9bf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-30033a76 elementor-widget elementor-widget-html" data-id="30033a76" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<button id="stakeDEED" onclick="stake Token()" type="submit">SWAP BNB for DEED</button>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4161f51" data-id="4161f51" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-798bfd26 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="798bfd26" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4de84c74" data-id="4de84c74" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-64f046be elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="64f046be" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3dce0a0" data-id="3dce0a0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-23bd35c1 elementor-widget elementor-widget-heading" data-id="23bd35c1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Start earning 10% APY</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-28b3dd02 elementor-widget elementor-widget-spacer" data-id="28b3dd02" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6576747c elementor-widget elementor-widget-heading" data-id="6576747c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">And help people reach the dream of home ownership</p>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-5b109bc elementor-widget elementor-widget-heading" data-id="5b109bc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">© 2021 Stiff.Money All Rights Reserved</span>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-79e4b66a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="79e4b66a" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-58d5586d" data-id="58d5586d" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		<script type="text/template" id="tmpl-elementor-templates-modal__header">
+	<div class="elementor-templates-modal__header__logo-area"></div>
+	<div class="elementor-templates-modal__header__menu-area"></div>
+	<div class="elementor-templates-modal__header__items-area">
+		<# if ( closeType ) { #>
+			<div class="elementor-templates-modal__header__close elementor-templates-modal__header__close--{{{ closeType }}} elementor-templates-modal__header__item">
+				<# if ( 'skip' === closeType ) { #>
+				<span>Skip</span>
+				<# } #>
+				<i class="eicon-close" aria-hidden="true" title="Close"></i>
+				<span class="elementor-screen-only">Close</span>
+			</div>
+		<# } #>
+		<div id="elementor-template-library-header-tools"></div>
+	</div>
+</script>
+
+<script type="text/template" id="tmpl-elementor-templates-modal__header__logo">
+	<span class="elementor-templates-modal__header__logo__icon-wrapper e-logo-wrapper">
+		<i class="eicon-elementor"></i>
+	</span>
+	<span class="elementor-templates-modal__header__logo__title">{{{ title }}}</span>
+</script>
+<script type="text/template" id="tmpl-elementor-finder">
+	<div id="elementor-finder__search">
+		<i class="eicon-search"></i>
+		<input id="elementor-finder__search__input" placeholder="Type to find anything in Elementor">
+	</div>
+	<div id="elementor-finder__content"></div>
+</script>
+
+<script type="text/template" id="tmpl-elementor-finder-results-container">
+	<div id="elementor-finder__no-results">No Results Found</div>
+	<div id="elementor-finder__results"></div>
+</script>
+
+<script type="text/template" id="tmpl-elementor-finder__results__category">
+	<div class="elementor-finder__results__category__title">{{{ title }}}</div>
+	<div class="elementor-finder__results__category__items"></div>
+</script>
+
+<script type="text/template" id="tmpl-elementor-finder__results__item">
+	<a href="{{ url }}" class="elementor-finder__results__item__link">
+		<div class="elementor-finder__results__item__icon">
+			<i class="eicon-{{{ icon }}}"></i>
+		</div>
+		<div class="elementor-finder__results__item__title">{{{ title }}}</div>
+		<# if ( description ) { #>
+			<div class="elementor-finder__results__item__description">- {{{ description }}}</div>
+		<# } #>
+	</a>
+	<# if ( actions.length ) { #>
+		<div class="elementor-finder__results__item__actions">
+		<# jQuery.each( actions, function() { #>
+			<a class="elementor-finder__results__item__action elementor-finder__results__item__action--{{ this.name }}" href="{{ this.url }}" target="_blank">
+				<i class="eicon-{{{ this.icon }}}"></i>
+			</a>
+		<# } ); #>
+		</div>
+	<# } #>
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=2.0.13' id='elementskit-framework-js-frontend-js'></script>
+<script type='text/javascript' id='elementskit-framework-js-frontend-js-after'>
+
+		var elementskit = {
+            resturl: 'https://stiffmoney.com/wp-json/elementskit/v1/',
+        }
+
+		
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=2.0.13' id='ekit-widget-scripts-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.12.1' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.12.1' id='jquery-ui-draggable-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/backbone.min.js?ver=1.4.0' id='backbone-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/backbone/backbone.marionette.min.js?ver=2.4.5' id='backbone-marionette-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/backbone/backbone.radio.min.js?ver=1.0.4' id='backbone-radio-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/js/common-modules.min.js?ver=3.0.14' id='elementor-common-modules-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script type='text/javascript' id='wp-api-request-js-extra'>
+/* <![CDATA[ */
+var wpApiSettings = {"root":"https:\/\/stiffmoney.com\/wp-json\/","nonce":"1ef0941422","versionString":"wp\/v2\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/api-request.min.js?ver=5.6.1' id='wp-api-request-js'></script>
+<script type='text/javascript' id='elementor-common-js-before'>
+var elementorCommonConfig = {"version":"3.0.14","isRTL":false,"isDebug":false,"isElementorDebug":false,"activeModules":["ajax","finder","connect"],"urls":{"assets":"https:\/\/stiffmoney.com\/wp-content\/plugins\/elementor\/assets\/","rest":"https:\/\/stiffmoney.com\/wp-json\/"},"ajax":{"url":"https:\/\/stiffmoney.com\/wp-admin\/admin-ajax.php","nonce":"354a2d6c08"},"finder":{"data":{"edit":{"title":"Edit","dynamic":true,"name":"edit"},"general":{"title":"General","dynamic":false,"items":{"saved-templates":{"title":"Saved Templates","icon":"library-save","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=library","keywords":["template","section","page","library"]},"system-info":{"title":"System Info","icon":"info-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-system-info","keywords":["system","info","environment","elementor"]},"role-manager":{"title":"Role Manager","icon":"person","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-role-manager","keywords":["role","manager","user","elementor"]},"knowledge-base":{"title":"Knowledge Base","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=go_knowledge_base_site","keywords":["help","knowledge","docs","elementor"]},"popups":{"title":"Popups","icon":"library-save","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=popup&elementor_library_type=popup","keywords":["template","popup","library"]},"theme-builder":{"title":"Theme Builder","icon":"library-save","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-app&ver=3.0.14#\/site-editor","keywords":["template","header","footer","single","archive","search","404","library"]}},"name":"general"},"create":{"title":"Create","dynamic":false,"items":{"post":{"title":"Add New Post","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?action=elementor_new_post&post_type=post&_wpnonce=878982158b","keywords":["post","page","template","new","create"]},"page":{"title":"Add New Page","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?action=elementor_new_post&post_type=page&_wpnonce=878982158b","keywords":["post","page","template","new","create"]},"elementor_library":{"title":"Add New Template","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?post_type=elementor_library#add_new","keywords":["post","page","template","new","create"]},"elementskit_template":{"title":"Add New Template","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementskit_template&_wpnonce=878982158b","keywords":["post","page","template","new","create"]},"elementskit_widget":{"title":"Add New Widget","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementskit_widget&_wpnonce=878982158b","keywords":["post","page","template","new","create"]},"elementskit_content":{"title":"Add New ElementsKit item","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementskit_content&_wpnonce=878982158b","keywords":["post","page","template","new","create"]},"popups":{"title":"Add New Popup","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=popup&elementor_library_type=popup#add_new","keywords":["template","theme","popup","new","create"]},"theme-template":{"title":"Add New Theme Template","icon":"plus-circle-o","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=theme#add_new","keywords":["template","theme","new","create"]}},"name":"create"},"site":{"title":"Site","dynamic":false,"items":{"homepage":{"title":"Homepage","url":"https:\/\/stiffmoney.com","icon":"home-heart","keywords":["home","page"]},"wordpress-dashboard":{"title":"Dashboard","icon":"dashboard","url":"https:\/\/stiffmoney.com\/wp-admin\/","keywords":["dashboard","wordpress"]},"wordpress-menus":{"title":"Menus","icon":"wordpress","url":"https:\/\/stiffmoney.com\/wp-admin\/nav-menus.php","keywords":["menu","wordpress"]},"wordpress-themes":{"title":"Themes","icon":"wordpress","url":"https:\/\/stiffmoney.com\/wp-admin\/themes.php","keywords":["themes","wordpress"]},"wordpress-customizer":{"title":"Customizer","icon":"wordpress","url":"https:\/\/stiffmoney.com\/wp-admin\/customize.php","keywords":["customizer","wordpress"]},"wordpress-plugins":{"title":"Plugins","icon":"wordpress","url":"https:\/\/stiffmoney.com\/wp-admin\/plugins.php","keywords":["plugins","wordpress"]},"wordpress-users":{"title":"Users","icon":"wordpress","url":"https:\/\/stiffmoney.com\/wp-admin\/users.php","keywords":["users","profile","wordpress"]}},"name":"site"},"settings":{"title":"Settings","dynamic":false,"items":{"general-settings":{"title":"General Settings","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor","keywords":["general","settings","elementor"]},"advanced":{"title":"Advanced","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor#tab-advanced","keywords":["advanced","settings","elementor"]},"custom-fonts":{"title":"Custom Fonts","icon":"typography","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?post_type=elementor_font","keywords":["custom","fonts","elementor"]},"custom-icons":{"title":"Custom Icons","icon":"favorite","url":"https:\/\/stiffmoney.com\/wp-admin\/edit.php?post_type=elementor_icons","keywords":["custom","icons","elementor"]}},"name":"settings"},"tools":{"title":"Tools","dynamic":false,"items":{"tools":{"title":"Tools","icon":"tools","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-tools","keywords":["tools","regenerate css","safe mode","debug bar","sync library","elementor"]},"replace-url":{"title":"Replace URL","icon":"tools","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-tools#tab-replace_url","keywords":["tools","replace url","domain","elementor"]},"version-control":{"title":"Version Control","icon":"time-line","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-tools#tab-versions","keywords":["tools","version","control","rollback","beta","elementor"]},"maintenance-mode":{"title":"Maintenance Mode","icon":"tools","url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-tools#tab-maintenance_mode","keywords":["tools","maintenance","coming soon","elementor"]}},"name":"tools"}},"i18n":{"finder":"Finder"}},"connect":[]};
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/js/common.min.js?ver=3.0.14' id='elementor-common-js'></script>
+<script type='text/javascript' id='elementor-app-loader-js-before'>
+var elementorAppConfig = {"menu_url":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-app&ver=3.0.14#\/site-editor","assets_url":"https:\/\/stiffmoney.com\/wp-content\/plugins\/elementor\/assets\/","return_url":"https:\/\/stiffmoney.com\/wp-admin\/post.php?post=303&action=elementor","site-editor":[]};
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/js/app-loader.min.js?ver=3.0.14' id='elementor-app-loader-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/wp-embed.min.js?ver=5.6.1' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.0.14' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.0.6' id='elementor-sticky-js'></script>
+<script type='text/javascript' id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/stiffmoney.com\/wp-admin\/admin-ajax.php","nonce":"a1aa53fb49","i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/stiffmoney.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.0.6' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.14' id='share-link-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.14","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/stiffmoney.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":303,"title":"BNB%20Swap%20%E2%80%93%20Stiff%20Money","excerpt":"","featuredImage":false},"user":{"roles":["administrator"]}};
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.14' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.0.13' id='elementskit-elementor-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js?ver=2.0.13' id='elementskit-js-widgetarea-control-editor-js'></script>
+<script type='text/javascript' id='elementor-admin-bar-js-before'>
+var elementorAdminBarConfig = {"elementor_edit_page":{"id":"elementor_edit_page","title":"Edit with Elementor","href":"https:\/\/stiffmoney.com\/wp-admin\/post.php?post=303&action=elementor","children":{"304":{"id":"elementor_app_site_editor","title":"Open Theme Builder","href":"https:\/\/stiffmoney.com\/wp-admin\/admin.php?page=elementor-app&ver=3.0.14#\/site-editor","class":"elementor-app-link"}}}};
+</script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-content/plugins/elementor/assets/js/elementor-admin-bar.min.js?ver=3.0.14' id='elementor-admin-bar-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
+<script type='text/javascript' src='https://stiffmoney.com/wp-includes/js/admin-bar.min.js?ver=5.6.1' id='admin-bar-js'></script>
+	</body>
+</html>
